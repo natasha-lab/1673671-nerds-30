@@ -11,15 +11,12 @@
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-
-<body class="page-body">
+<body class="page-body inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-
         <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс»">
       </a>
-
       <ul class="sait-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -27,163 +24,148 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <a class="main-cart" href="#">Корзина</a>
+      <div class="top-heading"><h1>Магазин готовых шаблонов</h1></div>
     </nav>
   </header>
-  <main>
-
-    <div>
-      <form method="get" action="">
-        <fieldset>
-          <legend>Стоимость:</legend>
+  <main class="content">
+    <div  class="filters">
+      <form class="catalog" method="get" action="">
+        <fieldset class="fieldset">
+          <legend class="legend">Стоимость:</legend>
           <label>
           <p>
-                <xsl:text>Выберите диапазон:</xsl:text>
+              <xsl:text>Выберите диапазон:</xsl:text>
               </p>
               <p>
               <div id="slider-range"></div>
-              </p>
-            
-
+              </p>            
           </label>
+          <input type="number">
+          <input type="number">
         </fieldset>
-        <fieldset>
-          <legend>Сетка:</legend>
-          <ul>
+        <fieldset class="fieldset">
+          <legend class="legend">Сетка:</legend>
+          <ul class="radio">
             <li>
               <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-              <label for="filter-adaptive">Адаптивная</label>
+              <label class="options"for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
               <input type="radio" name="grid" value="fixed" id="filter-fixed">
-              <label for="filter-fixed">Фиксированная</label>
+              <label class="options"for="filter-fixed">Фиксированная</label>
             </li>
             <li>
               <input type="radio" name="grid" value="rubber" id="filter-rubber">
-              <label for="filter-rubber">Резиновая</label>
+              <label class="options"for="filter-rubber">Резиновая</label>
             </li>
           </ul>
-
         </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
+        <fieldset class="fieldset">
+          <legend class="legend">Особенности:</legend>
           <ul>
             <li>
               <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Слайдер</label>
+              <label class="options" for="filter-slider">Слайдер</label>
             </li>
             <li>
               <input type="checkbox" name="block-advantage" id="filter-block-advantage">
-              <label for="filter-block-advantage">Блок преимущества</label>
+              <label class="options" for="filter-block-advantage">Блок преимущества</label>
             </li>
             <li>
               <input type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
+              <label class="options"for="filter-news">Новости</label>
             </li>
             <li>
               <input type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
+              <label class="options"for="filter-gallery">Галерея</label>
             </li>
             <li>
               <input type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
-
+              <label class="options"for="filter-basket">Корзина</label>
             </li>
             <ul>
-
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button-filters"type="submit">Показать</button>
       </form>
     </div>
-    <div>
-      <h2>Сортировать</h2>
-      <ul>
-        <li>по цене</li>
-        <li>по типу</li>
-        <li>по названию</li>
+    <section class="main-content">
+    <div class="filter-main-content">
+      <p class="legend">Сортировать</p>
+      <ul class="filter-list">
+        <li class="filter-item">по цене</li>
+        <li class="filter-item">по типу</li>
+        <li class="filter-item">по названию</li>
       </ul>
     </div>
-    <div>
-      <ul>
-        <li>
-          <div>
-            <a href="">
-              <h3>SEDONA</h3>
-              <p>Информационный сайт для туристов</p>
-              <p>
+    <div class="templates">
+      <ul aria-colcount="templates-list">
+        <li class="sedona">
+            <a href=""> 
+              <h3 class="name-templates">SEDONA</h3>
+              <p class="description-templates">Информационный сайт для туристов</p>
                 <img src="img/sedona.jpg" width="359" height="578" alt="картинка SEDONA">
-              </p>
-            </a>
-            <p>
-              9900 ₽
-            </p>
-          </div>
+            <br><button class="button-price" type="submit">9900₽</button></br>
+          </a>
         </li>
-        <li>
+        <li class="pink">
           <a href="">
-            <h3>PINK</h3>
-
+            <h3 class="name-templates">PINK</h3>
             <p>
               <img src="img/pink.jpg" width="358" height="578" alt=" картинка PINK">
             </p>
           </a>
-
         </li>
-        <li>
+        <li class="Barbershop Borodinski">
           <a href="">
-            <h3>Barbershop Borodinski</h3>
+            <h3 class="name-templates">Barbershop Borodinski</h3>
             <p>
               <img src="img/barbershop.jpg" width="358" height="578" alt=" картинка Barbershop Borodinski">
             </p>
           </a>
-
         </li>
-        <li>
+        <li class="Mishka">
           <a href="">
-            <h3>Mishka</h3>
-
+            <h3 class="name-templates">Mishka</h3>
             <p>
               <img src="img/mishka.jpg" width="359" height="578" alt=" картинка Mishka">
             </p>
           </a>
-
         </li>
-        <li>
+        <li class="aplus">
           <a href="">
-            <h3>A+</h3>
-
+            <h3 class="name-templates">A+</h3>
             <p>
               <img src="img/aplus.png" width="359" height="578" alt=" картинка A+">
             </p>
           </a>
-
         </li>
-        <li>
+        <li class="kvast">
           <a href="">
-            <h3>Кваст</h3>
-
+            <h3 class="name-templates">Кваст</h3>
             <p>
               <img src="img/kvast.jpg" width="359" height="578" alt=" картинка Кваст">
             </p>
           </a>
-
         </li>
       </ul>
-      <ul>
+      </div>
+    <div class="pages">
+      <ul class="page-list">
         <li>
-          <a>1</a>
+          <button class="button-one" type="submit">1</button>
         </li>
         <li>
-          <a href="#">2</a>
+          <button class="button-page" type="submit" href="#">2</button>
         </li>
         <li>
-          <a href="#">3</a>
+          <button class="button-page" type="submit" href="#">3</button>
         </li>
         <li>
-          <a href="#">СЛЕДУЮЩАЯ</a>
+          <button class="button-page-big" type="submit" href="#">СЛЕДУЮЩАЯ</button>
         </li>
       </ul>
     </div>
-    <section>
+    </section>
       <section class="main-map">
         <h2>Как добраться</h2>
         <a>
@@ -192,7 +174,6 @@
       </section>
   </main>
   <footer class="main-footer">
-
     <h2>Давайте дружить, это выгодно!</h2>
     <p>Скидка 10% для друзей из социальных сетей.</p>
     <div class="footer-sosial">
@@ -210,5 +191,4 @@
     </div>
   </footer>
 </body>
-
 </html>

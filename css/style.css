@@ -40,202 +40,272 @@ font-style: normal;
 --gray: #dfdfdf;
 --dark-gray: #d5d5d5;
 --extra-gray: #4d4d4d;
+--gtay-extra-dark: #666666;
+--gray-mini:#DBDBDB;
+
 }
 /* Global */
 .page-body {
-  min-width: 900px;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  background-position: top center;
-  background-color: var(--basic-white);
-  color: var(--basic-black);
-  align-items: center;
+min-width: 900px;
+margin: 0;
+padding: 0;
+font-family: "Roboto", Arial, sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+background-position: top center;
+background-color: var(--basic-white);
+color: var(--basic-black);
+align-items: center;
 }
 a {
-  text-decoration: none;
+text-decoration: none;
 }
-
 img {
-  max-width: 100%;
-  height: auto;
+max-width: 100%;
+height: auto;
 }
 ul {
-  list-style: none;
+list-style: none;
 }
 /* Button */
 .button {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-}
-
-.link-button {
-  width: 240px;
-  height: 50px;
-  border-radius: 3px;
-  background-color: var(--orange);
+font-size: 16px;
+line-height: 18px;
+text-transform: uppercase;
+color: var(--basic-white);
 }
 .link-button {
-  background-color: var(--orange);
+width: 240px;
+height: 50px;
+border-radius: 3px;
+background-color: var(--orange);
 }
-
+.link-button {
+background-color: var(--orange);
+}
 .link-button:hover {
-  background-color: var(--red);
+background-color: var(--red);
 }
-
 .link-button:focus {
-  background-color: var(--burgundy);
+background-color: var(--burgundy);
 }
 .orange-button {
-  border-radius: 3px;
-  width: 160px;
-  height: 50px;
-  background-color: var(--orange);
+border-radius: 3px;
+width: 160px;
+height: 50px;
+background-color: var(--orange);
 }
-
 .orange-button {
-  background-color: var(--orange);
+background-color: var(--orange);
 }
-
 .orange-button:hover {
-  background-color: var(--red);
+background-color: var(--red);
 }
-
 .orange-button:focus {
-  background-color: var(--burgundy);
+background-color: var(--burgundy);
 }
 .green-button {
-  border-radius: 3px;
-  width: 160px;
-  height: 50px;
-  background-color: var(--basic-green);
+border-radius: 3px;
+width: 160px;
+height: 50px;
+background-color: var(--basic-green);
 }
 .green-button {
-  background-color: var(--basic-green);
+background-color: var(--basic-green);
 }
-
 .green-button:hover {
-  background-color: var(--green);
+background-color: var(--green);
 }
-
 .green-button:focus {
-  background-color: var(--dark-green);
-}
-
-.yellow-button {
-  border-radius: 3px;
-  width: 160px;
-  height: 50px;
-  background-color: var(--basic-yellow);
+background-color: var(--dark-green);
 }
 .yellow-button {
-  background-color: var(--basic-yellow);
+border-radius: 3px;
+width: 160px;
+height: 50px;
+background-color: var(--basic-yellow);
 }
-
 .yellow-button {
-  background-color: var(--yellow);
+background-color: var(--basic-yellow);
 }
-
 .yellow-button {
-  background-color: var(--brown);
+background-color: var(--yellow);
+}
+.yellow-button {
+background-color: var(--brown);
 }
 /* Main navigation */
 .main-navigation {
-  line-height: 30px;
-  color: var(--basic-black);
-  background-color: var(--basic-extra-light);
-  text-transform: uppercase;
+line-height: 30px;
+color: var(--basic-black);
+background-color: var(--basic-extra-light);
+text-transform: uppercase;
 }
-
 .site-navigation a,
 .main-cart a {
-  color: var(--basic-black);
+color: var(--basic-black);
 }
 .site-navigation a:hover,
 .main-cart a:hover {
-  color: var(--orange);
+color: var(--orange);
 }
 .site-navigation a:active,
 .main-cart a:active {
-  color: var(--basic-black);
+color: var(--basic-black);
+/* Slider */
 }
 .slider-caption {
-  background-color: var(--basic-extra-light);
+background-color: var(--basic-extra-light);
 }
 .slider-caption h1 {
-  font-size: 55x;
-  line-height: 55px;
+font-size: 55px;
+line-height: 55px;
+/* Service */
 }
-
 .service-item h2 {
-  font-family: "roboto bold";
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
+font-family: "roboto bold";
+font-size: 24px;
+line-height: 30px;
+text-transform: uppercase;
 }
 .service-item p {
-  color: var(--black);
+color: var(--black);
 }
-
 .span {
-  color: var(--orange);
-  width: 25px;
-  height: 2px;
+color: var(--orange);
+width: 25px;
+height: 2px;
 }
-
+/* Features */
 .features h1 {
-  font-size: 45px;
-  line-height: 45px;
+font-size: 45px;
+line-height: 45px;
 }
 .features p {
-  color: var(--black);
+color: var(--black);
 }
 .features h2 {
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "roboto bold";
-  text-transform: uppercase;
-  color: var(--black);
+font-size: 16px;
+line-height: 24px;
+font-family: "roboto bold";
+text-transform: uppercase;
+color: var(--black);
 }
-
 .feature-item {
-  color: var(--black);
+color: var(--black);
 }
 .features h3 {
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "roboto bold";
-  text-transform: uppercase;
+font-size: 16px;
+line-height: 24px;
+font-family: "roboto bold";
+text-transform: uppercase;
 }
+/* Statistics */
 .statistic-item {
-  font-family: "roboto bold";
-  font-size: 45px;
-  line-height: 64px;
+font-family: "roboto bold";
+font-size: 45px;
+line-height: 64px;
 }
 .percent {
-  font-family: "roboto bold";
-  font-size: 26px;
-  line-height: 40px;
+font-family: "roboto bold";
+font-size: 26px;
+line-height: 40px;
 }
-
 .text {
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--black);
+font-size: 16px;
+line-height: 18px;
+color: var(--black);
 }
-
+/* Footer */
 .main-footer h2 {
-  font-family: "roboto bold";
-  font-size: 36px;
-  line-height: 36px;
+font-family: "roboto bold";
+font-size: 36px;
+line-height: 36px;
 }
 .main-footer p {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--black-iight);
+font-size: 16px;
+line-height: 22px;
+color: var(--black-iight);
+}
+.inner-page .main-header {
+background-color: var(--basic-black);
+}
+/*Catalog*/
+.top-heading .h1 {
+font-size: 55px;
+line-height: 55px;
+align-items: center;
+}
+/* Filters */
+.legend {
+font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
+font-family: "roboto bold";
+}  
+.options {
+font-size: 16px;
+line-height: 20px;
+color: var(--black);
+} 
+.button-filters {
+font-size: 16px;
+line-height: 18px;
+text-transform: uppercase;
+width: 260px;
+height: 50px;
+background-color: var(--basic-extra-light);
+font-family: "roboto bold";
+border-radius: 3px;
+} 
+/* Main content */
+.filter-item {
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+}
+.name-templates {
+width: 71px;
+height: 30px;
+text-transform: uppercase;
+font-family: "roboto bold";
+color: var(--basic-black);
+}
+.description-templates {
+font-size: 16px;
+line-height: 18px;
+color: var(--gtay-extra-dark);
+}
+.button-price {
+font-size: 16px;
+line-height: 18px;
+text-transform: uppercase;
+color: var(--basic-white);
+width: 200px;
+height: 50px;
+background-color: var(--orange);
+border-radius: 3px;
+}
+.button-one {
+font-size: 16px;
+line-height: 18px;
+width: 50px;
+height: 50px;
+background-color: var(--basic-white);
+}
+.button-page {
+font-size: 16px;
+line-height: 18px;
+width: 50px;
+height: 50px;
+background-color: var(--basic-extra-light);
+}
+.button-page-big {
+font-size: 16px;
+line-height: 18px; 
+text-transform: uppercase;
+width: 260px;
+height: 50px;
+background-color: var(--basic-extra-light);
 }
