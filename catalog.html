@@ -29,7 +29,7 @@
 <h1 class="top-heading">Магазин готовых шаблонов</h1>
 </div>
 </header>
-  <main class="content">
+  <main class="catalog container">
     <section  class="filters">
       <form class="catalog" method="get" action="">
         <fieldset class="fieldset">
@@ -46,8 +46,8 @@
           <input type="number">
         </fieldset>
         <fieldset class="fieldset">
-          <legend class="legend">Сетка:</legend>
-          <ul class="radio">
+          <legend class="legend">Сетка:</legend> <!--Не понимаю почему данный блок и кнопка встает вторым рядом а не вниз страницы идет--> 
+          <ul>
             <li>
               <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
               <label class="options"for="filter-adaptive">Адаптивная</label>
@@ -55,7 +55,7 @@
             <li>
               <input type="radio" name="grid" value="fixed" id="filter-fixed">
               <label class="options"for="filter-fixed">Фиксированная</label>
-            </li>
+            </li>''
             <li>
               <input type="radio" name="grid" value="rubber" id="filter-rubber">
               <label class="options"for="filter-rubber">Резиновая</label>
@@ -85,13 +85,12 @@
               <input type="checkbox" name="basket" id="filter-basket">
               <label class="options"for="filter-basket">Корзина</label>
             </li>
-            <ul>
+            </ul>
         </fieldset>
         <button class="button-filters"type="submit">Показать</button>
       </form>
-  </section>
+    </section>
     <section class="main-content">
-      <div class="container">
     <div class="filter-main-content">
       <p class="legend">Сортировать</p>
       <ul class="filter-list">
@@ -156,14 +155,12 @@
           <li class="button-page"><a href="#">3</a></li>
           <li class="button-page-big"><a href="#">следующая</a></li>
         </ul>
-      </div>
     </section>
     <section class="main-map">
       <div class="container">
       <a>
         <img src="img/map.jpg" width="1440" height="416" alt="карта">
       </a>
-    </div>
     </section>
   </main>
   <footer class="main-footer">
