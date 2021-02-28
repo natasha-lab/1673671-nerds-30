@@ -13,23 +13,27 @@
 </head>
 <body class="page-body inner-page">
   <header class="main-header">
-    <div class="container">
-    <a class="main-header-logo" href="index.html">
-      <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс»">
-    </a>
-    <ul class="sait-navigation">
-      <li><a href="#">Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-    <div class="cart">
-    <a class="main-cart" href="#">Корзина</a>
+    <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+      <div class="container">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс»">
+      </a>
+      <ul class="sait-navigation">
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="cart">
+      <a class="main-cart" href="#">Корзина</a>
+  </div>
 </div>
-<h1 class="top-heading">Магазин готовых шаблонов</h1>
 </div>
-</header>
-  <main class="catalog container">
+</nav>
+  </header>
+<div><h1 class="top-heading">Магазин готовых шаблонов</h1></div>  
+<main class="catalog container">  
     <section  class="filters">
       <form class method="get" action="">
         <fieldset class="fieldset">
@@ -99,19 +103,21 @@
         <li class="filter-item">по названию</li>
       </ul>
     </div>
-      <ul aria-colcount="templates-list">
-        <li class="name-project">
+      <ul class="templates-list">
+        <li class="name-project"> <!--Не понимаю почему картинки не встают на фон, код пересмотрела несколько раз не нашла отклонений-->
             <a href=""> 
               <h3 class="name-templates">SEDONA</h3>
               <p class="description-templates">Информационный сайт для туристов</p>
+              <p class="name-project-image">
                 <img src="img/sedona.jpg" width="359" height="578" alt="картинка SEDONA">
+              </p>
             <br><button class="button-price" type="submit">9900₽</button></br>
           </a>
         </li>
         <li class="name-project">
           <a href="">
             <h3 class="name-templates">PINK</h3>
-            <p>
+            <p class="name-project-image">
               <img src="img/pink.jpg" width="358" height="578" alt=" картинка PINK">
             </p>
           </a>
@@ -119,7 +125,7 @@
         <li class="name-project">
           <a href="">
             <h3 class="name-templates">Barbershop Borodinski</h3>
-            <p>
+            <p class="name-project-image">
               <img src="img/barbershop.jpg" width="358" height="578" alt=" картинка Barbershop Borodinski">
             </p>
           </a>
@@ -127,7 +133,7 @@
         <li class="name-project">
           <a href="">
             <h3 class="name-templates">Mishka</h3>
-            <p>
+            <p class="name-project-image">
               <img src="img/mishka.jpg" width="359" height="578" alt=" картинка Mishka">
             </p>
           </a>
@@ -135,7 +141,7 @@
         <li class="name-project">
           <a href="">
             <h3 class="name-templates">A+</h3>
-            <p>
+            <p class="name-project-image">
               <img src="img/aplus.png" width="359" height="578" alt=" картинка A+">
             </p>
           </a>
@@ -143,7 +149,7 @@
         <li class="name-project">
           <a href="">
             <h3 class="name-templates">Кваст</h3>
-            <p>
+            <p class="name-project-image">
               <img src="img/kvast.jpg" width="359" height="578" alt=" картинка Кваст">
             </p>
           </a>
@@ -159,8 +165,9 @@
     <section class="main-map">
       <div class="container">
       <a>
-        <img src="img/map.jpg" width="1440" height="416" alt="карта">
+        <img class="map-img" src="img/map.jpg" width="1440" height="416" alt="карта">
       </a>
+    </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -189,7 +196,6 @@
     <h2 class="sentence">Давайте дружить, это выгодно!</h2>
     <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
   </section>
-</div>
 </div>
   </footer>
 </body>
